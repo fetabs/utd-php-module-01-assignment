@@ -10,10 +10,24 @@
 
   <!-- BOOTSTRAP -->
   <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous"/>
-  
 </head>
 
+<!-- 
+  Definição de layout:
+    BODY com viewport de altura de 100%;
+    NAV como container-fluid;
+    MAIN como container;
+    DIV com col-8, centralizada horizontalment com mx-auto.
+ -->
+
 <body class="vh-100">
+
+  <!-- 
+    Navbar:
+      NAV para navegação entre as páginas adaptada para responsividade com 
+      BUTTON como navbar-toggler.
+   -->
+
   <nav class="navbar navbar-dark navbar-expand-md bg-primary">
     <div class="container-fluid">
       <a class="navbar-brand link-light fw-bold" href="#">
@@ -61,104 +75,113 @@
   <main class="container py-5">
     <div class="row">
       <div class="col-8 mx-auto">
-        <table class="
-          table 
-          table-bordered 
-          text-center 
-          align-middle 
-          table-hover"
-        >
-          <thead class="table-primary align-middle">
-            <tr>
-              <th scope="col">Código</th>
-              <th scope="col">Produto</th>
-              <th scope="col">Valor</th>
-              <th scope="col">Estoque Virtual</th>
-              <th scope="col">Estoque Real</th>
-            </tr>
-          </thead>
-          <tbody>
-            <tr>
-              <td>134</td>
-              <td>Caixa Box Fini</td>
-              <td>R$ 30,00</td>
-              <td>20</td>
-              <td>10</td>
-            </tr>
 
-            <tr>
-              <td>135</td>
-              <td>Oreo</td>
-              <td>R$ 4,50</td>
-              <td>20</td>
-              <td>8</td>
-            </tr>
+        <!-- 
+          Tabela:
+            TABLE dentro de DIV com table-responsive para responsividade com 
+            elementos centralizados.
+         -->
 
-            <tr>
-              <td>136</td>
-              <td>Pringles</td>
-              <td>R$ 15,00</td>
-              <td>14</td>
-              <td>11</td>
-            </tr>
-
-            <tr>
-              <td>137</td>
-              <td>Panetone</td>
-              <td>R$ 15,00</td>
-              <td>25</td>
-              <td>12</td>
-            </tr>
-
-            <tr>
-              <td>138</td>
-              <td>Pacote Biscoito Bauducco</td>
-              <td>R$ 8,00</td>
-              <td>10</td>
-              <td>2</td>
-            </tr>
-
-            <tr>
-              <td>139</td>
-              <td>Sequilhos</td>
-              <td>R$ 2,50</td>
-              <td>24</td>
-              <td>16</td>
-            </tr>
-
-            <tr>
-              <td>140</td>
-              <td>Biscoito Bonno Limão</td>
-              <td>R$ 3,00</td>
-              <td>12</td>
-              <td>8</td>
-            </tr>
-
-            <tr>
-              <td>141</td>
-              <td>Biscoito Bonno Chocolate</td>
-              <td>R$ 3,00</td>
-              <td>14</td>
-              <td>3</td>
-            </tr>
-
-            <tr>
-              <td>142</td>
-              <td>Bolacha Amanteigada</td>
-              <td>R$ 7,00</td>
-              <td>12</td>
-              <td>16</td>
-            </tr>
-
-            <tr>
-              <td>143</td>
-              <td>Pastilha Halls</td>
-              <td>R$ 2,00</td>
-              <td>28</td>
-              <td>26</td>
-            </tr>
-          </tbody>
-        </table>
+        <div class="table-responsive">
+          <table class="
+            table 
+            table-bordered 
+            text-center 
+            align-middle 
+            table-hover"
+          >
+            <thead class="table-primary align-middle">
+              <tr>
+                <th scope="col">Código</th>
+                <th scope="col">Produto</th>
+                <th scope="col">Valor</th>
+                <th scope="col">Estoque Virtual</th>
+                <th scope="col">Estoque Real</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td>134</td>
+                <td>Caixa Box Fini</td>
+                <td>R$ 30,00</td>
+                <td>20</td>
+                <td>10</td>
+              </tr>
+  
+              <tr>
+                <td>135</td>
+                <td>Oreo</td>
+                <td>R$ 4,50</td>
+                <td>20</td>
+                <td>8</td>
+              </tr>
+  
+              <tr>
+                <td>136</td>
+                <td>Pringles</td>
+                <td>R$ 15,00</td>
+                <td>14</td>
+                <td>11</td>
+              </tr>
+  
+              <tr>
+                <td>137</td>
+                <td>Panetone</td>
+                <td>R$ 15,00</td>
+                <td>25</td>
+                <td>12</td>
+              </tr>
+  
+              <tr>
+                <td>138</td>
+                <td>Pacote Biscoito Bauducco</td>
+                <td>R$ 8,00</td>
+                <td>10</td>
+                <td>2</td>
+              </tr>
+  
+              <tr>
+                <td>139</td>
+                <td>Sequilhos</td>
+                <td>R$ 2,50</td>
+                <td>24</td>
+                <td>16</td>
+              </tr>
+  
+              <tr>
+                <td>140</td>
+                <td>Biscoito Bonno Limão</td>
+                <td>R$ 3,00</td>
+                <td>12</td>
+                <td>8</td>
+              </tr>
+  
+              <tr>
+                <td>141</td>
+                <td>Biscoito Bonno Chocolate</td>
+                <td>R$ 3,00</td>
+                <td>14</td>
+                <td>3</td>
+              </tr>
+  
+              <tr>
+                <td>142</td>
+                <td>Bolacha Amanteigada</td>
+                <td>R$ 7,00</td>
+                <td>12</td>
+                <td>16</td>
+              </tr>
+  
+              <tr>
+                <td>143</td>
+                <td>Pastilha Halls</td>
+                <td>R$ 2,00</td>
+                <td>28</td>
+                <td>26</td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
       </div>
     </div>
   </main>
